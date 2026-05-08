@@ -1,0 +1,15 @@
+{
+  "name": "blazedemo-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright E2E testing framework for blazedemo.com",
+  "scripts": {
+    "test": "npx playwright test",
+    "visualRegression": "npx playwright test tests/visual-regression.spec.ts --headed",
+    "regression": "npx playwright test tests/regression.spec.ts --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
