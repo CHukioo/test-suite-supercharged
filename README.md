@@ -30,7 +30,7 @@ npx playwright install
 | Command | Description |
 |---------|-------------|
 | `npm test` | Run all tests (headless) |
-| `npx playwright test tests/visual-regression.spec.ts` | Run visual regression tests only |
+| `npm run visualRegression` | Run visual regression tests only |
 | `npx playwright test --update-snapshots` | Regenerate all visual baselines |
 
 ## Project Structure
