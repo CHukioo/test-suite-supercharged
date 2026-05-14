@@ -37,15 +37,17 @@ npx playwright install
 
 ```
 ├── pages/
-│   ├── HomePage.ts           # Home page with flight search
-│   ├── FlightResultsPage.ts  # Flight results listing
-│   ├── PurchasePage.ts       # Passenger & payment form
-│   └── ConfirmationPage.ts   # Purchase confirmation
+│   ├── HomePage.ts               # Home page with flight search
+│   ├── FlightResultsPage.ts      # Flight results listing
+│   ├── PurchasePage.ts           # Passenger & payment form
+│   └── ConfirmationPage.ts       # Purchase confirmation
+├── helpers/
+│   └── visualHelpers.ts          # Visual comparison utilities (snapshot, masking, image load)
 ├── tests/
-│   ├── homepage.spec.ts      # Homepage UI tests
-│   ├── flight-search.spec.ts # Flight search flow tests
-│   └── purchase-flow.spec.ts # End-to-end purchase tests
-├── playwright.config.ts      # Playwright configuration
+│   ├── regressio.spec.ts         # Functional purchase flow regression tests
+│   └── visual-regression.spec.ts # Visual regression tests with snapshot comparison
+├── tests/snapshots/              # Committed baseline screenshots
+├── playwright.config.ts          # Playwright configuration
 ├── tsconfig.json
 └── package.json
 ```
